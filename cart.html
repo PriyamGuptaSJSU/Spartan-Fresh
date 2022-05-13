@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Cart - Spartan fresh</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Insert Bootstrap -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js">
+    </script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="images/logo.png" width="125px"></a>
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="About Us.html">About</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                    <li><a href="Register.html">Login/Register</a></li>
+                </ul>
+            </nav>
+            <a href="cart.html"><img src="images/cart.png" width="30px" height="30px"></a>
+            <img src="images/menu.png" class="menu-icon">
+        </div>
+
+    </div>
+
+    <!--------------Cart Items details--------------->
+    <div class="small-container cart-page">
+
+        <table>
+            <tr>
+                <th>Product</th>
+                <th>Quantity</th>
+                <th>Subtotal</th>
+            </tr>
+
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="images/Dairy/2% Half Gallon.jpg">
+                        <div>
+                            <p>Organic 2% Milk - Half Gallon</p>
+                            <small>Price: $3.00</small><br>
+                            <a href="">Remove</a>
+                        </div>
+                    </div>
+                </td>
+                <td><input type="number" value="1"></td>
+                <td>$3.00</td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="images/Pantry/Golden Oreos.jpg">
+                        <div>
+                            <p>Golden Oreos</p>
+                            <small>Price: $2.00</small><br>
+                            <a href="">Remove</a>
+                        </div>
+                    </div>
+                </td>
+                <td><input type="number" value="1"></td>
+                <td>$2.00</td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="images/Produce/Banana.webp">
+                        <div>
+                            <p>Banana - 3 count</p>
+                            <small>Price: $1.00</small><br>
+                            <a href="">Remove</a>
+                        </div>
+                    </div>
+                </td>
+                <td><input type="number" value="1"></td>
+                <td>$6.00</td>
+            </tr>
+        </table>
+
+        <div class="total-price">
+            <table>
+                <tr>
+                    <td>Subtotal</td>
+                    <td>$11.00</td>
+                </tr>
+                <tr>
+                    <td>Tax (9.75%)</td>
+                    <td>$0.88</td>
+                </tr>
+                <tr>
+                    <td>Total</td>
+                    <td>$11.88</td>
+                </tr>
+
+            </table>
+        </div>
+        <div class="total-price">
+            <button onclick="alertBox()">Submit order</button>
+        </div>
+
+    </div>
+
+    <script>
+        function alertBox() {
+            alert("Your order has been sent to the store. Check your email for order confirmation.");
+        }
+    </script>
+
+    <!----------Footer--------------->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col2">
+                    <img src="images/Logo-Fixed.png">
+                    <p>Our purpose is to serve the greater San Jose State community with fresh and accessable groceries.
+                    </p>
+                </div>
+                <div class="footer-col3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Return Policy</li>
+                        <li>Contact Us
+                        <li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+        </div>
+
+    </div>
+    
+</body>
+
+</html>

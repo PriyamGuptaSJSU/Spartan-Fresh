@@ -1,0 +1,327 @@
+ /* CSS for all content */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ /* Font for all body */
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+p{
+    color: #555;
+}
+ /* CSS for entire header on index */
+.header{
+    background: rgb(179, 231, 210);
+}
+.header .row{
+    margin-top: 50px;
+}
+ /* CSS for entire homepage banner container */
+.container{
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+ /* CSS for navbar */
+.navbar{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+ /* CSS for nav class */
+nav{
+    flex: 1;
+    text-align: right;
+}
+nav ul{
+    display: inline-block;
+    list-style-type: none;
+}
+nav ul li{
+    display: inline-block;
+    margin-right: 20px;
+}
+.menu-icon{
+    display: none;
+    width: 30px;
+    margin-left: 20px;
+}
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;    
+}
+.row h3{
+    text-align: center;
+}
+.column-2{
+    flex-basis: 50%;
+    min-width: 300px;
+}
+/* CSS for homepage image */
+.column-2 img{
+    max-width: 100%;
+    padding-bottom: 35px;
+}
+.column-2 h1{
+    font-size: 50px;
+    line-height: 60px;
+    margin: 25px 0;
+}
+.departments{
+    padding-top: 50px;
+    margin: 70px 0;
+}
+.small-container{
+    max-width: 1080px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.col-3{
+    flex-basis: 30%;
+    min-width: 250px;
+    margin-bottom: 30px;
+}
+.col-3 img{
+    width: 100%;
+}
+.title{
+    text-align: center;
+    margin: 0px auto 80px;
+    position: relative;
+    line-height: 60px;
+    color: rgb(0, 0, 0);
+}
+.col-4{
+    flex-basis: 25%;
+    padding: 10px;
+    min-width: 200px;
+    margin-bottom: 50px;
+    transition: transform 0.5s;
+}
+.col-4 img{
+    width: 100%;
+}
+h4{
+    color: #555;
+    font-weight: normal;
+}
+.col-4 p{
+    font-size: 14px;
+}
+.col-4:hover{
+    transform: translateY(-7px);
+}
+/*Footer*/
+.footer{
+    background: rgb(179, 231, 210);
+    color: #8a8a8a;
+    font-size: 14px;
+    padding: 60px 0 20px;
+}
+.footer p{
+    color: #000000;
+}
+.footer h3{
+    color: rgb(0, 0, 0);
+    margin-bottom: 20px;
+}
+.footer-col1,.footer-col2,.footer-col3,.footer-col4{
+    min-width: 250px;
+    margin-bottom: 20px;
+}
+.footer-col1{
+    flex-basis: 30%;
+}
+.footer-col2{
+    flex: 1;
+    text-align: center;
+}
+.footer-col2 img{
+    width: 180px;
+    margin-bottom: 20px;
+}
+.footer-col3,.footer-col4{
+    flex-basis: 12%;
+    text-align: center;
+}
+
+.footer li{
+    display: block;
+}
+.footer hr{
+    border: none;
+    background: #b5b5b5;
+    height: 1px;
+    margin:  20px 0;
+}
+
+/*Cart page*/
+.cart-page{
+    margin: 80px auto;
+}
+.cart-page th{
+    color:rgb(0, 0, 0)
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+.cart-info{
+    display: flex;
+    flex-wrap: wrap;
+}
+th{
+    text-align: left;
+    padding: 5px;
+    color: #fff;
+    background: rgb(179, 231, 210);
+    font-weight: normal;
+}
+td{
+    padding: 10px 5px;
+}
+td input{
+    width: 40px;
+    height: 30px;
+    padding: 5px;
+}
+td a{
+    color: #ff523b;
+    font-size: 12px;
+}
+td img{
+    width: 80px;
+    height: 80px;
+    margin-right: 10px; 
+}
+.total-price{
+    display: flex;
+    justify-content: flex-end;
+    
+}
+.total-price table{
+    border-top: 3px solid rgb(179, 231, 210);
+    width: 100%;
+    max-width: 350px;
+}
+td:last-child{
+    text-align: right;
+}
+th:last-child{
+    text-align: right;
+}
+/*Login/Register page*/
+.login-page{
+    padding: 50px 0;
+    background: rgb(179, 179, 179);
+}
+.form-container{
+    background: #fff;
+    width: 300px;
+    height: 400px;
+    position: relative;
+    text-align: center;
+    padding: 20px 0;
+    margin: auto;
+    overflow: hidden;
+}
+.form-btn{
+    display: inline-block;
+}
+.form-container span{
+    font-weight: bold;
+    padding: 0 10px;
+    color: #555;
+    cursor: pointer;
+    width: 100px;
+    display: inline-block;
+}
+.form-container form{
+    max-width: 300px;
+    padding: 0 20px;
+    position: absolute;
+    top: 130px;
+    transition: transform 1s;
+}
+form input{
+    width: 100%;
+    height: 30px;
+    margin: 10px 0;
+    padding: 0 10px;
+    border: 1px solid rgb(179, 231, 210)#ccc;
+}
+form input:focus{
+    outline: none;
+}
+form .btn{
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    margin: 10px 0;
+}
+form .btn:focus{
+    outline: none;
+}
+form a{
+    font-size: 12px;
+}
+#LoginForm{
+     left: -300px;
+}
+#RegForm{
+    left: 0;
+}
+/*About page*/
+.about-section {
+    padding: 40px;
+    text-align: center;
+    background-color: rgb(179, 231, 210);
+    color: white;
+    font-size: 15px;
+}
+.about-section p{
+    color:rgb(0, 0, 0)
+}
+/*contact page*/
+.contact-page{  
+    width: 500px;
+    height: 420px;
+    margin: auto;  
+    margin-top: 10%;
+    margin-bottom: 50px;
+    padding: 25px;  
+    background: rgb(179, 231, 210);  
+    text-align: center;
+    justify-content: center;
+}  
+.form{
+    align-items: center;
+    margin: auto;
+    width: 300px;  
+    height: 300px;  
+    border: none;
+}
+#Email, #Name, #Text{
+    width: 300px;  
+    height: 30px;  
+    border: none;  
+}
+#Message{
+    width: 300px;  
+    height: 120px;  
+    border: none; 
+}
+.success{
+    text-align: center;
+}
